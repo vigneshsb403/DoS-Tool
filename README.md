@@ -5,4 +5,5 @@ This is tool is in development and is buggy please dont use this in the real wor
 ## Installation
 enter the following code in your terminal:
 ```sh
-https://github.com/admin-402/DoS-Tool.git```
+https://github.com/admin-402/DoS-Tool.git
+```
