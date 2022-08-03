@@ -7,3 +7,7 @@ enter the following code in your terminal:
 ```sh
 git clone https://github.com/admin-402/DoS-Tool.git
 ```
+### requirements
+```sh
+pip install random-user-agent
+```
