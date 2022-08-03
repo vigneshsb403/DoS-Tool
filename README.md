@@ -9,5 +9,5 @@ git clone https://github.com/admin-402/DoS-Tool.git
 ```
 ### requirements
 ```sh
-pip install random-user-agent
+pip3 install random-user-agent
 ```
