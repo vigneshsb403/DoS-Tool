@@ -10,4 +10,5 @@ git clone https://github.com/admin-402/DoS-Tool.git
 ### requirements
 ```sh
 pip3 install random-user-agent
+pip3 install beautifulsoup4
 ```
