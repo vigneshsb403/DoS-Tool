@@ -1,4 +1,3 @@
-![wp5047464-ink-smoke-wallpapers](https://user-images.githubusercontent.com/92362676/187161417-62eee2b4-0b54-49f5-82dc-49139bdbe0a5.jpeg)
 # DoS-Tool
 This is a basic dos tool for the purpose of learning multithreading
 ## Warning
